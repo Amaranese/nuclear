@@ -1,0 +1,214 @@
+{
+  "name": "nuclear",
+  "version": "0.6.17",
+  "description": "Streaming music player that finds music sources automatically.",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "electron",
+    "music",
+    "youtube"
+  ],
+  "author": {
+    "name": "",
+    "email": "mail@gmail.com"
+  },
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Amaranese/nuclear/issues"
+  },
+  "homepage": "https://github.com/Amaranese/nuclear#readme",
+  "scripts": {
+    "postinstall": "lerna bootstrap --hoist && electron-builder install-app-deps",
+    "start": "lerna run start --stream",
+    "build": "shx rm -rf dist && lerna run build && npm run pack",
+    "test": "lerna run lint && lerna run build && lerna run test",
+    "coverage": "lerna run coverage",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix",
+    "storybook": "lerna run storybook",
+    "docker": "docker run --rm --net=host --env=\"DISPLAY\" --volume=\"$HOME/.Xauthority:/root/.Xauthority:rw\" --device /dev/snd nuclear",
+    "build:docker": "docker build -t nuclear .",
+    "pack": "cross-env NODE_OPTIONS='--max-old-space-size=8192' electron-builder --dir -c.extraMetadata.main=dist/main.js",
+    "build:linux": "lerna run build && electron-builder -c.extraMetadata.main=dist/main.js --linux --publish onTag",
+    "build:windows": "lerna run build && cross-env NODE_OPTIONS='--max-old-space-size=8192' electron-builder -c.extraMetadata.main=dist/main.js --windows --publish onTag",
+    "build:macos": "lerna run build && cross-env NODE_OPTIONS='--max-old-space-size=8192' electron-builder -c.extraMetadata.main=dist/main.js --macos --publish onTag",
+    "build:all": "lerna run build && cross-env NODE_OPTIONS='--max-old-space-size=8192' electron-builder -c.extraMetadata.main=dist/main.js -mwl"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "electron": "^19.0.8",
+    "electron-builder": "^23.1.0",
+    "eslint": "^8.19.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.30.1",
+    "husky": "^8.0.1",
+    "lerna": "^5.1.8",
+    "lint-staged": "^13.0.3",
+    "shx": "^0.3.4",
+    "typescript": "^4.7.4"
+  },
+  "optionalDependencies": {
+    "7zip-bin-mac": "^1.0.1"
+  },
+  "engines": {
+    "node": ">=12.14.0",
+    "npm": ">=6.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.jsx": "eslint --fix",
+    "*.ts": "eslint --fix",
+    "*.tsx": "eslint --fix"
+  },
+  "build": {
+    "appId": "nuclear",
+    "productName": "nuclear",
+    "artifactName": "${productName}-${env.GITHASH}.${ext}",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/"
+    ],
+    "extraFiles": [
+      {
+        "from": "packages/app/resources",
+        "to": "resources",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "packages/main/resources",
+        "to": "resources",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "releaseInfo": {
+      "releaseName": "Nuclear ${env.GITHASH}"
+    },
+    "fileAssociations": [
+      {
+        "ext": "mp3",
+        "mimeType": "audio/mp3"
+      },
+      {
+        "ext": "mp3",
+        "mimeType": "audio/mpeg"
+      },
+      {
+        "ext": "ogg",
+        "mimeType": "audio/ogg"
+      },
+      {
+        "ext": "opus",
+        "mimeType": "audio/ogg"
+      },
+      {
+        "ext": "aac",
+        "mimeType": "audio/aac"
+      },
+      {
+        "ext": "flac",
+        "mimeType": "audio/flac"
+      },
+      {
+        "ext": "wav",
+        "mimeType": "audio/x-wav"
+      },
+      {
+        "ext": "m4a",
+        "mimeType": "audio/m4a"
+      },
+      {
+        "ext": "weba",
+        "mimeType": "audio/weba"
+      },
+      {
+        "ext": "mp4",
+        "mimeType": "audio/mp4"
+      },
+      {
+        "ext": "webm",
+        "mimeType": "audio/webm"
+      }
+    ],
+    "linux": {
+      "icon": "./build/icons/512x512.png",
+      "desktop": {
+        "Name": "Nuclear",
+        "Name[es]": "Reproductor de música Nuclear",
+        "Comment[es]": "Reproductor que retransmite música desde fuentes encontradas automáticamente."
+      },
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm",
+        "tar.gz",
+        "snap"
+      ],
+      "category": "Audio;AudioVideo;Network;Player;Music",
+      "extraFiles": [
+        {
+          "from": "packages/main/bin/linux",
+          "to": "resources/bin",
+          "filter": [
+            "**/*"
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.music",
+      "target": [
+        "zip",
+        "pkg",
+        "dmg"
+      ],
+      "extraFiles": [
+        {
+          "from": "packages/main/bin/mac",
+          "to": "resources/bin",
+          "filter": [
+            "**/*"
+          ]
+        }
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "extraFiles": [
+        {
+          "from": "packages/main/bin/win",
+          "to": "resources/bin",
+          "filter": [
+            "**/*"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "artifactName": "${productName} Setup ${env.GITHASH}.${ext}"
+    }
+  },
+  "dependencies": {
+    "node-gyp": "^9.0.0",
+    "sqlite3": "^5.0.8"
+  }
+}
