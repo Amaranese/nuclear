@@ -1,0 +1,15 @@
+@import "../../../vars";
+
+.popular_tracks_container {
+  .popular_tracks_header {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      margin-bottom: 1em;
+    }
+  }
+}
