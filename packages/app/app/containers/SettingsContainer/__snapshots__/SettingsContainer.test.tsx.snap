@@ -1,0 +1,1482 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Settings view container should render settings 1`] = `
+<DocumentFragment>
+  <div
+    class="main_layout_container"
+  >
+    <div
+      class="settings_container"
+    >
+      <div
+        class="settings_section"
+      >
+        <div
+          class="header_container"
+        >
+          Social
+        </div>
+        <hr />
+        <div
+          class="ui segment"
+        >
+          <div
+            class="ui grid social_integration"
+          >
+            <div
+              class="column"
+            >
+              <div
+                class="row"
+              >
+                <span>
+                  <i
+                    class="big icons"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="square icon social_icon_bg"
+                    />
+                    <i
+                      aria-hidden="true"
+                      class="lastfm square icon lastfm_icon"
+                    />
+                  </i>
+                </span>
+                <span>
+                  Last.fm
+                </span>
+              </div>
+              <div
+                class="row"
+              >
+                <p>
+                  In order to enable scrobbling, you first have to connect and authorize Nuclear on Last.fm, then click log in.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="settings_social_item"
+          >
+            <span>
+              User: 
+              <strong>
+                Not logged in
+              </strong>
+            </span>
+            <div
+              class="spacer"
+            />
+            <button
+              class="ui red button nuclear button"
+            >
+              Connect with Last.fm
+            </button>
+            <button
+              class="ui red button nuclear button"
+            >
+              Log in
+            </button>
+          </div>
+          <div
+            class="settings_social_item"
+          >
+            <label>
+              Enable scrobbling to Last.fm
+            </label>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fitted toggle checkbox"
+            >
+              <input
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+          <div
+            class="settings_social_item"
+          >
+            <span>
+              Import your Last.fm Favorites
+            </span>
+            <div
+              class="spacer"
+            />
+            <span>
+               
+            </span>
+            <div
+              class="spacer"
+            />
+            <button
+              class="ui green button nuclear button"
+            >
+              Import
+            </button>
+          </div>
+        </div>
+        <div
+          class="ui segment"
+        >
+          <div
+            class="ui grid social_integration"
+          >
+            <div
+              class="column"
+            >
+              <div
+                class="row"
+              >
+                <span>
+                  <span
+                    class="mastodon_logo"
+                  >
+                    test-file-stub
+                  </span>
+                </span>
+                <span />
+              </div>
+            </div>
+          </div>
+          <div
+            class="settings_social_item"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Mastodon instance URL
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui input"
+            >
+              <input
+                type="text"
+                value=""
+              />
+            </div>
+            <button
+              class="ui button nuclear button"
+            >
+              Authorize
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="settings_section"
+      >
+        <div
+          class="header_container"
+        >
+          HTTP API
+        </div>
+        <hr />
+        <div
+          class="ui segment"
+        >
+          <div
+            class="settings_item node"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              />
+            </span>
+            <div
+              class="spacer"
+            />
+            <a
+              class="http_api_url"
+            >
+              <i
+                aria-hidden="true"
+                class="linkify icon"
+              />
+              API Docs
+            </a>
+          </div>
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Enable the api
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fitted toggle checkbox"
+            >
+              <input
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+          <div
+            class="settings_item number"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Port used by the api
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui error fluid input"
+            >
+              <input
+                max="49151"
+                min="1024"
+                type="number"
+                value="3100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="settings_section"
+      >
+        <div
+          class="header_container"
+        >
+          Playback
+        </div>
+        <hr />
+        <div
+          class="ui segment"
+        >
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Loop after playing the last queue item
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fitted toggle checkbox"
+            >
+              <input
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Shuffle songs
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fitted toggle checkbox"
+            >
+              <input
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Shuffle on previous track
+              </label>
+              <p
+                class="settings_item_description"
+              >
+                Play a random track when shuffle is active and the previous track button is clicked
+              </p>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fitted toggle checkbox"
+            >
+              <input
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Autoradio
+              </label>
+              <p
+                class="settings_item_description"
+              >
+                Add similar tracks automatically when the queue is ending
+              </p>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui checked fitted toggle checkbox"
+            >
+              <input
+                checked=""
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+          <div
+            class="settings_item number"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Number of seconds to seek forward/backwards when pressing arrow keys
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui error fluid input"
+            >
+              <input
+                type="text"
+                value="10"
+              />
+            </div>
+          </div>
+          <div
+            class="settings_item number"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Autoradio craziness
+              </label>
+              <p
+                class="settings_item_description"
+              >
+                Autoradio will select songs that are less similar to the ones already in the queue the crazier it is
+              </p>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="slider_container"
+            >
+              <label>
+                Less
+              </label>
+              <div
+                class="range"
+                style="width: auto;"
+              >
+                <div
+                  class="baseDiv"
+                  style="height: 21px;"
+                >
+                  <div
+                    class="track"
+                    style="border-radius: 4px; background: rgb(68, 71, 90); top: 8.5px; height: 4px;"
+                  />
+                  <div
+                    class="fill"
+                    style="border-radius: 4px; background: rgb(248, 248, 242); width: calc(100% * 0.10101010101010101 + 18.87878787878788px); top: 8.5px; height: 4px;"
+                  />
+                  <div
+                    class="thumb"
+                    style="width: 21px; height: 21px; border-radius: 21px; background: rgb(248, 248, 242);"
+                  />
+                  <input
+                    class="range_input"
+                    max="100"
+                    min="1"
+                    style="top: 8.5px; height: 21px; width: calc(100% - 21px); margin-left: 10.5px; margin-right: 10.5px;"
+                    type="range"
+                  />
+                </div>
+              </div>
+              <label>
+                More
+              </label>
+            </div>
+          </div>
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Skip non-music segment
+              </label>
+              <p
+                class="settings_item_description"
+              >
+                Playback skips non-music segment from SponsorBlock (https://sponsor.ajay.app/)
+              </p>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui checked fitted toggle checkbox"
+            >
+              <input
+                checked=""
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="settings_section"
+      >
+        <div
+          class="header_container"
+        >
+          Program settings
+        </div>
+        <hr />
+        <div
+          class="ui segment"
+        >
+          <div
+            class="settings_item number"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Notification timeout
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui error fluid input"
+            >
+              <input
+                type="text"
+                value="3"
+              />
+            </div>
+          </div>
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Disable hardware rendering (might fix issues with dragging elements and flashing screen)
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fitted toggle checkbox"
+            >
+              <input
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Frameless window (requires restart)
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui checked fitted toggle checkbox"
+            >
+              <input
+                checked=""
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+          <div
+            class="settings_item list"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Language
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              aria-expanded="false"
+              class="ui search selection dropdown nuclear dropdown list_option"
+              role="combobox"
+            >
+              <input
+                aria-autocomplete="list"
+                autocomplete="off"
+                class="search"
+                tabindex="0"
+                type="text"
+                value=""
+              />
+              <div
+                aria-atomic="true"
+                aria-live="polite"
+                class="divider text"
+                role="alert"
+              >
+                English
+              </div>
+              <i
+                aria-hidden="true"
+                class="dropdown icon"
+              />
+              <div
+                class="menu transition"
+                role="listbox"
+              >
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Česky
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Deutsch
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Dansk
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    English (US)
+                  </span>
+                </div>
+                <div
+                  aria-checked="true"
+                  aria-selected="true"
+                  class="active selected item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    English
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Español
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Suomi
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Français
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Greek
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    עברית
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Hindi
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Hrvatski
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Bahasa Indonesia
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Íslenska
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Italiano
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    日本語
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    한국어
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Kurdî
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Lietuvių
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Latviešu
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Nederlands
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Norsk
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Polski
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Português (Brasil)
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Русский
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Svenska
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Slovenčina
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Shqip
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Tagalog (Filipino)
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Türkçe
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Vietnamese
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    粵語
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    繁體中文
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    简体中文
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="settings_section"
+      >
+        <div
+          class="header_container"
+        >
+          Display
+        </div>
+        <hr />
+        <div
+          class="ui segment"
+        >
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Use mini player style
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fitted toggle checkbox"
+            >
+              <input
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Toggle discord rich presence (requires restart)
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui checked fitted toggle checkbox"
+            >
+              <input
+                checked=""
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Use compact style for menu bar
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fitted toggle checkbox"
+            >
+              <input
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Use compact style for queue bar
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fitted toggle checkbox"
+            >
+              <input
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Display track duration over the seekbar
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui checked fitted toggle checkbox"
+            >
+              <input
+                checked=""
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="settings_section"
+      >
+        <div
+          class="header_container"
+        >
+          Streaming
+        </div>
+        <hr />
+        <div
+          class="ui segment"
+        >
+          <div
+            class="settings_item string"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Invidious instance url
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fluid input"
+            >
+              <input
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="settings_section"
+      >
+        <div
+          class="header_container"
+        >
+          Downloads
+        </div>
+        <hr />
+        <div
+          class="ui segment"
+        >
+          <div
+            class="settings_item directory"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Downloads directory
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <span
+              class="directory_option"
+            >
+              <span
+                class="directory_content"
+              />
+              <button
+                class="ui icon inverted left labeled button"
+              >
+                <i
+                  aria-hidden="true"
+                  class="folder open icon"
+                />
+                Choose a directory...
+              </button>
+            </span>
+          </div>
+          <div
+            class="settings_item number"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Max simultaneous downloads
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui error fluid input"
+            >
+              <input
+                min="1"
+                type="text"
+                value="1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="settings_section"
+      >
+        <div
+          class="header_container"
+        >
+          Developer settings
+        </div>
+        <hr />
+        <div
+          class="ui segment"
+        >
+          <div
+            class="settings_item boolean"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Developer tools
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fitted toggle checkbox"
+            >
+              <input
+                class="hidden"
+                readonly=""
+                tabindex="0"
+                type="radio"
+                value=""
+              />
+              <label />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="settings_section"
+      >
+        <div
+          class="header_container"
+        >
+          Social
+        </div>
+        <hr />
+        <div
+          class="ui segment"
+        >
+          <div
+            class="settings_item string"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Nuclear identity service URL
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fluid input"
+            >
+              <input
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="settings_item string"
+          >
+            <span
+              class="settings_item_text"
+            >
+              <label
+                class="settings_item_name"
+              >
+                Nuclear playlists service URL
+              </label>
+            </span>
+            <div
+              class="spacer"
+            />
+            <div
+              class="ui fluid input"
+            >
+              <input
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

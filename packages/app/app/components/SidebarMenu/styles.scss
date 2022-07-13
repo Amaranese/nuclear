@@ -1,0 +1,14 @@
+@import '../../vars';
+
+.sidebar_menu {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column;
+  max-height: 100%;
+  //max-height: calc(100% - 56px);
+  overflow: auto;
+
+  a {
+    color: rgba($white, 0.5);
+  }
+}
